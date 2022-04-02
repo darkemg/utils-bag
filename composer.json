@@ -1,0 +1,26 @@
+{
+    "name": "darkemg/utils-bag",
+    "description": "Bolsa de componentes utilitários para PHP",
+    "type": "library",
+    "keywords": ["php", "utils"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Darke Mayer Goulart",
+            "email": "darke.goulart@gmail.com",
+            "role": "Developer"
+        }
+    ],
+    "autoload": {
+		"psr-4": {
+			"UtilsBag\\": "src/UtilsBag"
+		} 
+	},
+    "require": {
+        "php": ">=8.1",
+        "ext-mbstring": "*",
+        "ext-intl": "*",
+        "laminas/laminas-filter": "^2.14",
+        "symfony/string": "^6.0"
+    }
+}
