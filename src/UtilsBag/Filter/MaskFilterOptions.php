@@ -9,7 +9,7 @@
 
 namespace UtilsBag\Filter;
 
-enum CardFilterOptions : int {
+enum MaskFilterOptions: int {
 
     case LAST4 = 4;
     case FIRST6 = 6;

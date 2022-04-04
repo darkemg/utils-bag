@@ -9,7 +9,7 @@
 
 namespace UtilsBag\Filter;
 
-enum CaseFilterOptions : int {
+enum CaseFilterOptions: int {
 
     case UPPER = 1;
     case LOWER = 2;
