@@ -21,6 +21,11 @@
         "ext-mbstring": "*",
         "ext-intl": "*",
         "laminas/laminas-filter": "^2.14",
-        "symfony/string": "^6.0"
+        "symfony/string": "^6.0",
+        "laminas/laminas-json": "^3.5",
+        "laminas/laminas-crypt": "^3.9",
+        "laminas/laminas-i18n": "^2.19",
+        "laminas/laminas-uri": "^2.10",
+        "laminas/laminas-xml2json": "^3.3"
     }
 }

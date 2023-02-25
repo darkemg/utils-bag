@@ -56,10 +56,10 @@ class CardNumberHide implements FilterInterface
             : '*';
         $this->visibleStart = array_key_exists('visible_start', $options)
             ? $options['visible_start']
-            : MaskOptionsEnum::FIRST6;
+            : MaskFilterOptions::FIRST6;
         $this->visibleEnd = array_key_exists('visible_end', $options)
             ? $options['visible_end']
-            : MaskOptionsEnum::LAST4;
+            : MaskFilterOptions::LAST4;
     }
     
     /**
