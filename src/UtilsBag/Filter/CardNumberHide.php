@@ -69,7 +69,7 @@ class CardNumberHide implements FilterInterface
     public function filter($value)
     {
         $startVisible = substr($value, 0, $this->visibleStart);
-        $endVisible = substr($value, ($this->visibleEnd * -1), strlen($value) - $this->visibleEnd);
+        $endVisible = $this->visibleEnd === 0 ? '' : substr($value, ($this->visibleEnd * -1), strlen($value) - $this->visibleEnd);
         $mask = str_repeat($this->maskChar, strlen($value) - $this->visibleStart - $this->visibleEnd);
         $filteredCardNumber = sprintf(
             '%s%s%s',
